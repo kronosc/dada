@@ -1,3 +1,6 @@
+/**
+ *  车
+ */
 public class Car {
      String name;
      int Rentmoney;
