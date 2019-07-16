@@ -1,7 +1,10 @@
 import  java.util.ArrayList;
 import java.util.Scanner;
+
+
 public class Rentcar {
 
+    // TODO: @cc integer是个什么鬼 QAQ
     public static <integer> void main(String[] args) {
         System.out.println("欢迎使用答答租车系统：");
         System.out.println("您是否要租车：1是 0否");
@@ -11,6 +14,8 @@ public class Rentcar {
         {
             System.out.println("您可租车的类型及其价目表：");
             System.out.println("序号 汽车名称 租金 容量");
+
+            // TODO: @cc 是否可以考虑用继承
             Car car1=new Car("奥迪A4",500,4,0);
             Car car2=new Car("马自达6",400,4,0);
             Car car3=new Car("皮卡雪6",450,4,2);
@@ -34,6 +39,7 @@ public class Rentcar {
             System.out.println("请输入您要租汽车的数量");
             Scanner input1 = new Scanner(System.in);
             int sum = input1.nextInt();
+            // TODO: @cc new ArrayList<>()
             ArrayList<Integer> list=new ArrayList<Integer>();
             for(int i=1;i<=sum;i++)
             {
